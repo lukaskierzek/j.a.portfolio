@@ -5,15 +5,18 @@ import Navbar from "./components/Navbar";
 import Books from "./components/Books";
 import Other from "./components/Other";
 import Footer from "./components/Footer";
+import Container from '@mui/material/Container';
 
 function App() {
     return (
         <>
-            <Header/>
-            <Navbar/>
-            <Books/>
-            <Other/>
-            <Footer/>
+            <Container>{/*#TODO: Add material ui*/}
+                <Header/>
+                <Navbar/>
+                <Books/>
+                <Other/>
+                <Footer/>
+            </Container>
         </>
     );
 }

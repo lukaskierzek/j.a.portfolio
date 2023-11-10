@@ -1,5 +1,4 @@
 function Footer() {
-    const link: string = "#"
     const author: string = "Łukasz Kierzek"
     return (
         <>

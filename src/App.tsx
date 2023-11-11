@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 function App() {
     return (
         <>
-            <Container>{/*#TODO: Add material ui*/}
+            <Container maxWidth='lg'>
                 <Header/>
                 <Navbar/>
                 <Books/>

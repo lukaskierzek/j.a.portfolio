@@ -48,6 +48,9 @@ function Books() {
                 <CardMedia
                     component="img"
                     image={book.imgUrl}
+                    sx={{
+                        width: "512px",
+                    }}
                 />
             </Card>
         </>

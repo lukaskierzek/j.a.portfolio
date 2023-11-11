@@ -13,8 +13,17 @@ function Books() {
                         <Typography
                             variant="h5"
                             sx={{
-                                fontStyle: 'italic',
-                                fontWeight: 'bold'
+                                fontWeight: 'bold',
+                                padding: '0 0 10px 0'
+                            }}
+                        >
+                            {book.author}
+                        </Typography>
+                        <Typography
+                            variant="h4"
+                            sx={{
+                                fontWeight: 'bold',
+                                color: 'blue'
                             }}
                         >
                             {book.title}
@@ -22,20 +31,8 @@ function Books() {
                         <Typography
                             variant="h5"
                             sx={{
-                                fontWeight: 'bold'
-                            }}
-                        >
-                            {book.author}
-                        </Typography>
-                        <Box component="div" sx={{
-                            backgroundColor: "Blue",
-                            height: "20px",
-                            width: "130px"
-                        }}></Box>
-                        <Typography
-                            variant="h5"
-                            sx={{
-                                fontWeight: 'bold'
+                                fontWeight: 'bold',
+                                padding: '20px 0 20px 0'
                             }}
                         >
                             {book.workType}
@@ -51,6 +48,7 @@ function Books() {
                     sx={{
                         width: "512px",
                     }}
+                    alt={book.title}
                 />
             </Card>
         </>

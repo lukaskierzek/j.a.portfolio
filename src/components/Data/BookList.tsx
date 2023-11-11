@@ -22,7 +22,7 @@ export const BookList: IBook[] = [
     {
         id: 1,
         title: "Gieroj",
-        author: "autor: Piotr Sułek",
+        author: "Piotr Sułek",
         workType: "Redakcja",
         about:
             <>
@@ -50,7 +50,7 @@ export const BookList: IBook[] = [
     {
         id: 2,
         title: "Nasze zwierzęta mocy",
-        author: "autor: Wojciech Jóźwiak",
+        author: "Wojciech Jóźwiak",
         workType: "Korekta poskładowa",
         about:
             <>
@@ -77,7 +77,7 @@ export const BookList: IBook[] = [
     {
         id: 3,
         title: "Plan naprawy Ukrainy",
-        author: "autor: Łeś Bełej",
+        author: "Łeś Bełej",
         workType: "Redakcja, korekta, korekta poskładowa",
         about:
             <>
@@ -106,7 +106,7 @@ export const BookList: IBook[] = [
     {
         id: 4,
         title: "Jednorożce",
-        author: "autor: Barbora Hrínová",
+        author: "Barbora Hrínová",
         workType: "Redakcja",
         about:
             <>
@@ -133,7 +133,7 @@ export const BookList: IBook[] = [
     {
         id: 5,
         title: "Tego pokoju nie da się zjeść",
-        author: "autor: Nicol Hochholczerová",
+        author: "Nicol Hochholczerová",
         workType: "Redakcja, korekta poskładowa",
         about:
             <>
@@ -158,7 +158,7 @@ export const BookList: IBook[] = [
     {
         id: 6,
         title: "Na coś trzeba umrzeć",
-        author: "autorka: Adrianna Alksnin",
+        author: "Adrianna Alksnin",
         workType: "Korekta, korekta poskładowa",
         about:
             <>
@@ -182,7 +182,7 @@ export const BookList: IBook[] = [
     {
         id: 7,
         title: "Diabeł to czarny pies",
-        author: "autor: Sándor Jászberényi",
+        author: "Sándor Jászberényi",
         workType: "Korekta, korekta poskładowa",
         about:
             <>
@@ -210,7 +210,7 @@ export const BookList: IBook[] = [
     {
         id: 8,
         title: "Współczesna natura",
-        author: "autor: Derek Jarman",
+        author: "Derek Jarman",
         workType: "Redakcja",
         about:
             <>

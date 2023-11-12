@@ -1,7 +1,10 @@
+import Topic from "./Topic";
+import {ChapterENG, ChapterPL} from "./Navbar";
+
 function Other() {
     return (
         <>
-            <p>OTHER</p>
+            {Topic(ChapterPL.OTHER, ChapterENG.OTHER)}
         </>
     );
 }

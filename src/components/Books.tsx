@@ -2,6 +2,8 @@ import {BookList} from "./Data/BookList";
 import Card from '@mui/material/Card';
 import Box from '@mui/material/Box';
 import {CardContent, CardMedia, Typography} from "@mui/material";
+import Topic from "./Topic";
+import {ChapterENG, ChapterPL} from "./Navbar";
 
 function Books() {
 
@@ -37,7 +39,9 @@ function Books() {
                         >
                             {book.workType}
                         </Typography>
-                        <Typography variant="body1" color="text.primary">
+                        <Typography
+                            variant="body1"
+                            color="text.primary">
                             {book.about}
                         </Typography>
                     </CardContent>
@@ -48,13 +52,14 @@ function Books() {
                     sx={{
                         width: "512px",
                     }}
-                    alt={book.title}
+                    alt={'Okładka książki' + book.title}
                 />
             </Card>
         </>
     )
     return (
         <>
+            {Topic(ChapterPL.BOOKS, ChapterENG.BOOKS)}
             {BooksItems}
         </>
     );

@@ -6,9 +6,7 @@ function Header() {
         <>
             <Box sx={{display: 'flex', flexDirection: 'column'}}>
                 <img src={header_image} alt="information_about_justyna_adamus"/>
-
             </Box>
-
         </>
     );
 }

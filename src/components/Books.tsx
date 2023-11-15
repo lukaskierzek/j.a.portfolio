@@ -50,7 +50,8 @@ function Books() {
                     component="img"
                     image={book.imgUrl}
                     sx={{
-                        width: "512px",
+                        width: "40%",
+                        height: "40%",
                     }}
                     alt={'Okładka książki' + book.title}
                 />

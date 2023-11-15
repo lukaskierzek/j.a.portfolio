@@ -1,5 +1,5 @@
 import {JSX} from "react";
-import PublisherList from "./PublisherList";
+import Publisher from "./PublisherList";
 
 interface IBook {
     id: number,
@@ -57,7 +57,7 @@ export const BookList: IBook[] = [
                 </p>
 
                 <p>
-                    Obecnie całą antologię można pobrać za darmo ze strony {returnLinkToBookstore("https://wydawnictwoix.pl/produkt/24-02-2022/", PublisherList.publisherIX)}.
+                    Obecnie całą antologię można pobrać za darmo ze strony {returnLinkToBookstore("https://wydawnictwoix.pl/produkt/24-02-2022/", Publisher.IX)}.
                 </p>
             </>,
         imgUrl: "https://wydawnictwoix.pl/wp-content/uploads/2022/04/24022022_cover_kolor_800px.jpg",
@@ -79,7 +79,7 @@ export const BookList: IBook[] = [
 
                 <p>
                     Książkę można zakupić na
-                    stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/Wojciech-Jozwiak-Nasze-zwierzeta-mocy/594", PublisherList.publisherHaart)}.
+                    stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/Wojciech-Jozwiak-Nasze-zwierzeta-mocy/594", Publisher.HAART)}.
                 </p>
             </>,
         imgUrl: "https://www.sklep.ha.art.pl/userdata/public/gfx/740/Haart_Nasze-zwierzeta-mocy_okladka_15.01.23.jpg",
@@ -108,7 +108,7 @@ export const BookList: IBook[] = [
 
                 <p>
                     Książkę można zakupić na
-                    stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/Les-Belej-Plan-naprawy-Ukrainy/592", PublisherList.publisherHaart)}.
+                    stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/Les-Belej-Plan-naprawy-Ukrainy/592", Publisher.HAART)}.
                 </p>
             </>,
         imgUrl: "https://www.sklep.ha.art.pl/userdata/public/gfx/738/Plan-naprawy-Ukrainy-poprawiona-final.jpg",
@@ -134,7 +134,7 @@ export const BookList: IBook[] = [
 
                 <p>
                     Książkę można zakupić na
-                    stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/Barbora-Hrinova-Jednorozce%2C-tlum.-Olga-Stawinska/596", PublisherList.publisherHaart)}.
+                    stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/Barbora-Hrinova-Jednorozce%2C-tlum.-Olga-Stawinska/596", Publisher.HAART)}.
                 </p>
             </>,
         imgUrl: "https://www.sklep.ha.art.pl/userdata/public/gfx/741/okladka-jednorozce_yellow-1.jpg",
@@ -159,7 +159,7 @@ export const BookList: IBook[] = [
 
                 <p>
                     Książkę można zakupić na
-                    stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/Nicol-Hochholczerova-Tego-pokoju-nie-da-sie-zjesc%2C-tlum.-Rafal-Bukowicz/593", PublisherList.publisherHaart)}.
+                    stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/Nicol-Hochholczerova-Tego-pokoju-nie-da-sie-zjesc%2C-tlum.-Rafal-Bukowicz/593", Publisher.HAART)}.
                 </p>
             </>,
         imgUrl: "https://www.sklep.ha.art.pl/userdata/public/gfx/739/Haart_Nicol-H._Tego-pokoju_okladka_15.01.23.jpg",
@@ -183,7 +183,7 @@ export const BookList: IBook[] = [
 
                 <p>
                     Książkę można zakupić na
-                    stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/Adrianna-Alksnin-Na-cos-trzeba-umrzec/600", PublisherList.publisherHaart)}.
+                    stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/Adrianna-Alksnin-Na-cos-trzeba-umrzec/600", Publisher.HAART)}.
                 </p>
             </>,
         imgUrl: "https://www.sklep.ha.art.pl/userdata/public/gfx/745/Haart_Na-cos-trzeba-umrzec_okladka_22.02.233-1.jpg",
@@ -209,7 +209,7 @@ export const BookList: IBook[] = [
 
                 <p>
                     Książkę można zakupić na
-                    stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/Adrianna-Alksnin-Na-cos-trzeba-umrzec/600", PublisherList.publisherHaart)}.
+                    stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/Adrianna-Alksnin-Na-cos-trzeba-umrzec/600", Publisher.HAART)}.
                 </p>
             </>,
         imgUrl: "https://www.sklep.ha.art.pl/userdata/public/gfx/752/Haart_Diabel-to-czarny-pies-_okladka_27.04.22_-1.jpg",
@@ -233,7 +233,7 @@ export const BookList: IBook[] = [
 
                 <p>
                     Książkę można zakupić na
-                    stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/PRZEDSPRZEDAZ-Derek-Jarman-Wspolczesna-natura%2C-tlum.-Pawel-Swierczek/607", PublisherList.publisherHaart)}.
+                    stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/PRZEDSPRZEDAZ-Derek-Jarman-Wspolczesna-natura%2C-tlum.-Pawel-Swierczek/607", Publisher.HAART)}.
                 </p>
             </>,
         imgUrl: "https://www.sklep.ha.art.pl/userdata/public/gfx/755/Haart_Jarman_Modern-nature_okladka.jpg",

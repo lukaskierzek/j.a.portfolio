@@ -41,7 +41,8 @@ function Books() {
                         </Typography>
                         <Typography
                             variant="body1"
-                            color="text.primary">
+                            color="text.primary"
+                        >
                             {book.about}
                         </Typography>
                     </CardContent>

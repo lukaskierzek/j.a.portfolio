@@ -1,11 +1,6 @@
-interface IPublisherList {
-    publisherIX: string,
-    publisherHaart: string
+enum Publisher {
+    IX = "Wydawnictwa IX",
+    HAART = "Wydawnictwa Ha!art",
 }
 
-const publisherList: IPublisherList = {
-    publisherIX: "Wydawnictwa IX",
-    publisherHaart: "Wydawnictwa Ha!art"
-}
-
-export default publisherList;
+export default Publisher;

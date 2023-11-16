@@ -1,12 +1,35 @@
-function Footer() {
-    const author: string = "Łukasz Kierzek, Justyna Adamus"
+import {Grid, Typography} from "@mui/material";
+
+export default function Footer() {
+    function FooterAHTMLTag(text: string, href: string) {
+        return (
+            <a
+                href={href}
+                target="_blank"
+                rel="noreferrer"
+            >
+                {text}
+            </a>
+        );
+    }
+
     return (
         <>
-            <footer>
-                Autor: {author}. Wszelkie prawa zastrzeżone. <a href="https://github.com/lukaskierzek/j.a.portfolio" target="_blank" rel="noreferrer">Kod źródłowy / Source code</a>
-            </footer>
+            <Grid container>
+                <Grid item lg={12}>
+                    <footer>
+                        <Typography
+                            align="center"
+                            variant="body2"
+                        >
+                            Autorzy: {FooterAHTMLTag("Łukasz Kierzek", "https://www.linkedin.com/in/lukasz-kierzek-a4a977152/")}, {FooterAHTMLTag("Justyna Adamus", "https://www.linkedin.com/in/justyna-adamus-93a421286/")}.
+                            Wszelkie prawa zastrzeżone.
+                            {FooterAHTMLTag("Kod źródłowy / Source code", "https://github.com/lukaskierzek/j.a.portfolio")}
+                        </Typography>
+
+                    </footer>
+                </Grid>
+            </Grid>
         </>
     );
 }
-
-export default Footer;

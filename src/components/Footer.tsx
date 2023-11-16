@@ -26,7 +26,6 @@ export default function Footer() {
                             Wszelkie prawa zastrzeżone.
                             {FooterAHTMLTag("Kod źródłowy / Source code", "https://github.com/lukaskierzek/j.a.portfolio")}
                         </Typography>
-
                     </footer>
                 </Grid>
             </Grid>

@@ -1,7 +1,7 @@
 import header_image from './Images/header_image.jpg';
 import Box from "@mui/material/Box";
 
-function Header() {
+export default function Header() {
     return (
         <>
             <Box sx={{display: 'flex', flexDirection: 'column'}}>
@@ -10,5 +10,3 @@ function Header() {
         </>
     );
 }
-
-export default Header;

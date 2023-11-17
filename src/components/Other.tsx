@@ -6,12 +6,24 @@ import Card from "@mui/material/Card";
 import Box from "@mui/material/Box";
 
 
-function Other() {
+export default function Other() {
 
     const OtherItems = OtherList.map(other =>
         <>
-            <Card sx={{display: 'flex', marginBottom: '25px', padding: '10px'}}>
-                <Box sx={{marginBottom: '25px', padding: '10px'}}>
+            <Card
+                sx={{
+                    display: 'flex',
+                    marginBottom: '25px',
+                    padding: '10px',
+                    backgroundColor: "#22A39F",
+                }}
+            >
+                <Box
+                    sx={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                    }}
+                >
                     <CardContent>
                         <Typography
                             variant="h5"
@@ -51,5 +63,3 @@ function Other() {
         </>
     );
 }
-
-export default Other;

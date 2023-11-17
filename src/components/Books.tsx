@@ -5,12 +5,24 @@ import {CardContent, CardMedia, Typography} from "@mui/material";
 import Topic from "./Topic";
 import {ChapterENG, ChapterPL} from "./Navbar";
 
-function Books() {
+export default function Books() {
 
     const BooksItems = BookList.map(book =>
         <>
-            <Card sx={{display: 'flex', marginBottom: '25px', padding: '10px'}}>
-                <Box sx={{display: 'flex', flexDirection: 'column'}}>
+            <Card
+                sx={{
+                    display: 'flex',
+                    marginBottom: '25px',
+                    padding: '10px',
+                    backgroundColor: "#22A39F",
+                }}
+            >
+                <Box
+                    sx={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                    }}
+                >
                     <CardContent>
                         <Typography
                             variant="h5"
@@ -66,5 +78,3 @@ function Books() {
         </>
     );
 }
-
-export default Books;

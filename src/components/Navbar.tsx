@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
+import {styleBGI} from "./Data/Styles";
 
 export enum ChapterPL {
     BOOKS = 'Książki',
@@ -41,6 +42,7 @@ export default function Navbar() {
                 <Grid item xs={12} sx={{
                     margin: "20px 0 20px 0",
                     backgroundColor: "#22A39F",
+                    ...styleBGI,
                 }}>
                     <Stack direction="row">
                         {linkToChapter(ChapterENG.BOOKS, ChapterPL.BOOKS)}
@@ -70,6 +72,25 @@ function ModalContact() {
         p: 5,
     };
 
+    function ReturnGridModal(stactIcon: React.ReactElement, stactContent: React.ReactElement) {
+        return (
+            <>
+                <Grid lg={12} sx={{mb: 1}}>
+                    <Stack spacing={2} direction="row" alignItems="center">
+                        <Stack>
+                            <Avatar sx={{bgcolor: "black"}}>
+                                {stactIcon}
+                            </Avatar>
+                        </Stack>
+                        <Stack>
+                            {stactContent}
+                        </Stack>
+                    </Stack>
+                </Grid>
+            </>
+        );
+    }
+
     return (
         <>
             <Button onClick={handleOpen} sx={{color: "black"}}>{ChapterPL.CONTACT}</Button>
@@ -80,48 +101,40 @@ function ModalContact() {
             >
                 <Box sx={style}>
                     <Grid container sx={{color: 'text.primary'}}>
-                        <Grid  sx={{mb: 1}}>
-                            <Stack spacing={2} direction="row" alignItems="center">
-                                <Stack>
-                                    <Avatar sx={{bgcolor: "black"}}><EmailIcon/></Avatar>
-                                </Stack>
-                                <Stack>
-                                    <Typography component="address">
-                                        <Typography
-                                            component="a"
-                                            href="mailto:justyna.adamus9@gmail.com"
-                                        >
-                                            justyna.adamus9@gmail.com</Typography>
-                                    </Typography>
-                                </Stack>
-                            </Stack>
-                        </Grid>
-                        <Grid  sx={{mb: 1}}>
-                            <Stack spacing={2} direction="row" alignItems="center">
-                                <Stack>
-                                    <Avatar sx={{bgcolor: "black"}}><LinkedInIcon/></Avatar>
-                                </Stack>
-                                <Stack>
+                        {ReturnGridModal(
+                            <EmailIcon/>,
+                            <>
+                                <Typography component="address">
                                     <Typography
                                         component="a"
-                                        href="https://www.linkedin.com/in/justyna-adamus-93a421286/"
-                                        target="_blank"
-                                        rel="noreferrer"
+                                        href="mailto:justyna.adamus9@gmail.com"
                                     >
-                                        https://www.linkedin.com/in/justyna-adamus-93a421286/</Typography>
-                                </Stack>
-                            </Stack>
-                        </Grid>
-                        <Grid  sx={{mb: 1}}>
-                            <Stack spacing={2} direction="row" alignItems="center">
-                                <Stack>
-                                    <Avatar sx={{bgcolor: "black"}}><PhoneAndroidIcon/></Avatar>
-                                </Stack>
-                                <Stack>
-                                    <Typography>+48 535 384 840</Typography>
-                                </Stack>
-                            </Stack>
-                        </Grid>
+                                        justyna.adamus9@gmail.com
+                                    </Typography>
+                                </Typography>
+                            </>
+                        )}
+                        {ReturnGridModal(
+                            <LinkedInIcon/>,
+                            <>
+                                <Typography
+                                    component="a"
+                                    href="https://www.linkedin.com/in/justyna-adamus-93a421286/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    https://www.linkedin.com/in/justyna-adamus-93a421286/
+                                </Typography>
+                            </>
+                        )}
+                        {ReturnGridModal(
+                            <PhoneAndroidIcon/>,
+                            <>
+                                <Typography>
+                                    +48 535 384 840
+                                </Typography>
+                            </>
+                        )}
                     </Grid>
                 </Box>
             </Modal>

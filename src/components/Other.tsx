@@ -4,20 +4,14 @@ import {CardContent, CardMedia, Typography} from "@mui/material";
 import OtherList from "./Data/OtherList";
 import Card from "@mui/material/Card";
 import Box from "@mui/material/Box";
+import {styleCardBO} from "./Data/Styles";
 
 
 export default function Other() {
 
     const OtherItems = OtherList.map(other =>
         <>
-            <Card
-                sx={{
-                    display: 'flex',
-                    marginBottom: '25px',
-                    padding: '10px',
-                    backgroundColor: "#22A39F",
-                }}
-            >
+            <Card sx={styleCardBO}>
                 <Box
                     sx={{
                         display: 'flex',

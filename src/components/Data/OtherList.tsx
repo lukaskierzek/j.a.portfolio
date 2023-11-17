@@ -4,6 +4,7 @@ import students_cap from "../Images/students-cap.png";
 import jigsaw from "../Images/jigsaw.png";
 import storytelling from "../Images/storytelling.png";
 import study from "../Images/study.png";
+
 interface IOhterList {
     title: string,
     about: React.ReactElement,

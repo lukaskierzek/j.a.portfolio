@@ -1,4 +1,4 @@
-import {JSX} from "react";
+import React from "react";
 import Publisher from "./PublisherList";
 import {styleB, styleIB} from "./Styles";
 
@@ -7,10 +7,9 @@ interface IBook {
     title: string,
     author: string,
     workType: string,
-    about: JSX.Element,
+    about: React.ReactElement,
     imgUrl: string,
 }
-
 
 
 function returnLinkToBookstore(url: string, publisher: string): JSX.Element {
@@ -49,7 +48,8 @@ export const BookList: IBook[] = [
                     dochodzi do wniosku, że walczy po niewłaściwej stronie.
                 </p>
                 <p>
-                    Obecnie całą antologię można pobrać za darmo ze strony {returnLinkToBookstore("https://wydawnictwoix.pl/produkt/24-02-2022/", Publisher.IX)}.
+                    Obecnie całą antologię można pobrać za darmo ze
+                    strony {returnLinkToBookstore("https://wydawnictwoix.pl/produkt/24-02-2022/", Publisher.IX)}.
                 </p>
             </>,
         imgUrl: "https://wydawnictwoix.pl/wp-content/uploads/2022/04/24022022_cover_kolor_800px.jpg",

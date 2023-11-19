@@ -31,7 +31,7 @@ export default function Books() {
                             variant="h4"
                             sx={{
                                 fontWeight: 'bold',
-                                color: 'blue'
+                                color: 'green'
                             }}
                         >
                             {book.title}

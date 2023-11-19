@@ -8,6 +8,7 @@ export const styleIB = {
 }
 
 export const styleBGI = {
+    // backgroundImage: "linear-gradient(to right, #E0EEEF, #56BEB7)"
     backgroundImage: "linear-gradient(to right, #E0EEEF, #56BEB7)"
 }
 

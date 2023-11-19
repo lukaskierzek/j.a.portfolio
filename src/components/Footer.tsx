@@ -1,4 +1,6 @@
 import {Grid, Typography} from "@mui/material";
+import Links from "./Data/Links";
+import PersonalData from "./Data/PersonalData";
 
 export default function Footer() {
     function FooterAHTMLTag(text: string, href: string) {
@@ -20,15 +22,15 @@ export default function Footer() {
     return (
         <>
             <Grid container>
-                <Grid item lg={12}>
+                <Grid lg={12}>
                     <footer>
                         <Typography
                             align="center"
                             variant="body2"
                         >
-                            Autorzy: {FooterAHTMLTag("Łukasz Kierzek", "https://www.linkedin.com/in/lukasz-kierzek-a4a977152/")}, {FooterAHTMLTag("Justyna Adamus", "https://www.linkedin.com/in/justyna-adamus-93a421286/")}.
+                            Autorzy: {FooterAHTMLTag(PersonalData.LK_FULL_NAME, Links.LINKEDIN_LUKAS_KIERZEK)}, {FooterAHTMLTag(PersonalData.JA_FULL_NAME, Links.LINKEDIN_JUSTYNA_ADAMUS)}.
                             Wszelkie prawa
-                            zastrzeżone. {FooterAHTMLTag("Kod źródłowy / Source code", "https://github.com/lukaskierzek/j.a.portfolio")}
+                            zastrzeżone. {FooterAHTMLTag("Kod źródłowy / Source code", Links.GITHUB_SOURCE_CODE)}
                         </Typography>
                     </footer>
                 </Grid>

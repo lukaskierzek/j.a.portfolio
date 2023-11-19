@@ -6,6 +6,8 @@ import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import {styleBGI} from "./Data/Styles";
+import Links from "./Data/Links";
+import PersonalData from "./Data/PersonalData";
 
 export enum ChapterPL {
     BOOKS = 'Książki',
@@ -107,9 +109,9 @@ function ModalContact() {
                                 <Typography component="address">
                                     <Typography
                                         component="a"
-                                        href="mailto:justyna.adamus9@gmail.com"
+                                        href={`mailto:${PersonalData.JA_EMAIL}`}
                                     >
-                                        justyna.adamus9@gmail.com
+                                        {PersonalData.JA_EMAIL}
                                     </Typography>
                                 </Typography>
                             </>
@@ -119,11 +121,11 @@ function ModalContact() {
                             <>
                                 <Typography
                                     component="a"
-                                    href="https://www.linkedin.com/in/justyna-adamus-93a421286/"
+                                    href={Links.LINKEDIN_JUSTYNA_ADAMUS}
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    https://www.linkedin.com/in/justyna-adamus-93a421286/
+                                    {Links.LINKEDIN_JUSTYNA_ADAMUS}
                                 </Typography>
                             </>
                         )}
@@ -131,7 +133,7 @@ function ModalContact() {
                             <PhoneAndroidIcon/>,
                             <>
                                 <Typography>
-                                    +48 535 384 840
+                                    {PersonalData.JA_PHONE_NUMBER}
                                 </Typography>
                             </>
                         )}

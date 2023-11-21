@@ -10,7 +10,7 @@ export default function Books() {
 
     const BooksItems = BookList.map(book =>
         <>
-            <Card sx={styleCardBO}>
+            <Card sx={styleCardBO} key={book.title}>
                 <Box
                     sx={{
                         display: 'flex',
@@ -60,7 +60,8 @@ export default function Books() {
                         width: "40%",
                         height: "40%",
                     }}
-                    alt={'Okładka książki' + book.title}
+                    alt={`Okładka książki ${book.title}`}
+                    loading="lazy"
                 />
             </Card>
         </>

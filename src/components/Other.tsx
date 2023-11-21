@@ -11,7 +11,7 @@ export default function Other() {
 
     const OtherItems = OtherList.map(other =>
         <>
-            <Card sx={styleCardBO}>
+            <Card sx={styleCardBO} key={other.title}>
                 <Box
                     sx={{
                         display: 'flex',
@@ -44,7 +44,8 @@ export default function Other() {
                         width: "40%",
                         height: "40%",
                     }}
-                    alt={'test'}
+                    alt={`Ikona ${other.title}`}
+                    loading="lazy"
                 />
             </Card>
         </>

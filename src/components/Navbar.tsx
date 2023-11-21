@@ -74,18 +74,18 @@ function ModalContact() {
         p: 5,
     };
 
-    function ReturnGridModal(stactIcon: React.ReactElement, stactContent: React.ReactElement) {
+    function ReturnGridModal(stackIcon: React.ReactElement, stackContent: React.ReactElement) {
         return (
             <>
                 <Grid lg={12} sx={{mb: 1}}>
                     <Stack spacing={2} direction="row" alignItems="center">
                         <Stack>
                             <Avatar sx={{bgcolor: "black"}}>
-                                {stactIcon}
+                                {stackIcon}
                             </Avatar>
                         </Stack>
                         <Stack>
-                            {stactContent}
+                            {stackContent}
                         </Stack>
                     </Stack>
                 </Grid>

@@ -1,10 +1,10 @@
-import Topic from "./Topic";
-import {ChapterENG, ChapterPL} from "./Navbar";
+import Topic from "../Topic/Topic";
+import {ChapterENG, ChapterPL} from "../Navbar/Navbar";
 import {CardContent, CardMedia, Typography} from "@mui/material";
-import OtherList from "./Data/OtherList";
+import OtherList from "./OtherList";
 import Card from "@mui/material/Card";
 import Box from "@mui/material/Box";
-import {styleCardBO} from "./Data/Styles";
+import {styleCardBO} from "../Data/Styles";
 
 
 export default function Other() {

@@ -1,5 +1,5 @@
 import React from "react";
-import {styleB} from "./Styles";
+import {styleB} from "../Data/Styles";
 import students_cap from "../Images/students-cap.png";
 import jigsaw from "../Images/jigsaw.png";
 import storytelling from "../Images/storytelling.png";

@@ -1,63 +1,15 @@
-import {Avatar, Grid, Modal, Stack, Typography} from "@mui/material";
-import Button from '@mui/material/Button';
 import React, {useState} from "react";
+import {Avatar, Grid, Modal, Stack, Typography} from "@mui/material";
+import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
-import EmailIcon from '@mui/icons-material/Email';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
-import {styleBGI} from "./Data/Styles";
-import Links from "./Data/Links";
-import PersonalData from "./Data/PersonalData";
+import EmailIcon from "@mui/icons-material/Email";
+import PersonalData from "../Data/PersonalData";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Links from "../Data/Links";
+import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+import {ChapterPL} from "./Navbar";
 
-export enum ChapterPL {
-    BOOKS = 'Książki',
-    OTHER = 'Inne',
-    CONTACT = 'Kontakt',
-}
-
-export enum ChapterENG {
-    BOOKS = 'Books',
-    OTHER = 'Other',
-    CONTACT = 'Contact',
-}
-
-export default function Navbar() {
-    function linkToChapter(href: any, name: string) {
-        return (
-            <>
-                <Button>
-                    <Typography
-                        href={`#${href}`}
-                        style={{padding: '10px'}}
-                        component="a"
-                    >
-                        {name}
-                    </Typography>
-                </Button>
-            </>
-        );
-    }
-
-    return (
-        <>
-            <Grid container>
-                <Grid item xs={12} sx={{
-                    margin: "20px 0 20px 0",
-                    backgroundColor: "#22A39F",
-                    ...styleBGI,
-                }}>
-                    <Stack direction="row">
-                        {linkToChapter(ChapterENG.BOOKS, ChapterPL.BOOKS)}
-                        {linkToChapter(ChapterENG.OTHER, ChapterPL.OTHER)}
-                        {ModalContact()}
-                    </Stack>
-                </Grid>
-            </Grid>
-        </>
-    );
-}
-
-function ModalContact() {
+export default function ModalContact() {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);

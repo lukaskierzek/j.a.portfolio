@@ -1,6 +1,6 @@
 import {Grid, Typography} from "@mui/material";
-import Links from "./Data/Links";
-import PersonalData from "./Data/PersonalData";
+import Links from "../Data/Links";
+import PersonalData from "../Data/PersonalData";
 
 export default function Footer() {
     function FooterAHTMLTag(text: string, href: string) {

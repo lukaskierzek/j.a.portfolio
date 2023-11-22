@@ -1,4 +1,4 @@
-import header_image from './Images/header_image.jpg';
+import header_image from '../Images/header_image.jpg';
 import Box from "@mui/material/Box";
 
 export default function Header() {

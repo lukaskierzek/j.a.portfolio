@@ -1,10 +1,10 @@
-import {BookList} from "./Data/BookList";
+import {BookList} from "./BookList";
 import Card from '@mui/material/Card';
 import Box from '@mui/material/Box';
 import {CardContent, CardMedia, Typography} from "@mui/material";
-import Topic from "./Topic";
-import {ChapterENG, ChapterPL} from "./Navbar";
-import {styleCardBO} from "./Data/Styles";
+import Topic from "../Topic/Topic";
+import {ChapterENG, ChapterPL} from "../Navbar/Navbar";
+import {styleCardBO} from "../Data/Styles";
 
 export default function Books() {
 

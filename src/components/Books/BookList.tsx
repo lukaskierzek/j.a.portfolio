@@ -1,6 +1,7 @@
 import React from "react";
-import Publisher from "./PublisherList";
-import {styleB, styleIB} from "./Styles";
+import Publisher from "../Data/PublisherList";
+import {styleB, styleIB} from "../Data/Styles";
+import returnLinkToBookstore from "./ReturnLinkToBookstore";
 
 interface IBook {
     id: number,
@@ -11,21 +12,6 @@ interface IBook {
     imgUrl: string,
 }
 
-
-function returnLinkToBookstore(url: string, publisher: string): JSX.Element {
-    return (
-        <>
-            <a
-                href={url}
-                style={styleB}
-                target="_blank"
-                rel="noreferrer"
-            >
-                {publisher}
-            </a>
-        </>
-    );
-}
 
 export const BookList: IBook[] = [
     {

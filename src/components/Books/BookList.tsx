@@ -1,7 +1,7 @@
-import React from "react";
 import Publisher from "../Data/PublisherList";
 import {styleB, styleIB} from "../Data/Styles";
 import returnLinkToBookstore from "./ReturnLinkToBookstore";
+import React from "react";
 
 interface IBook {
     id: number,
@@ -23,13 +23,12 @@ export const BookList: IBook[] = [
             <>
                 <p>
                     <span style={styleIB}>24/02/22. Antologia dla Ukrainy</span> miała na celu okazanie solidarności z
-                    zaatakowaną Ukrainą oraz realne
-                    wsparcie organizacji Proliska, do której trafił dochód ze sprzedaży książek w formie e-booków.
+                    zaatakowaną Ukrainą oraz realne wsparcie organizacji Proliska, do której trafił dochód ze sprzedaży
+                    książek w formie e-booków.
                 </p>
                 <p>
                     Antologia była przedsięwzięciem charytatywnym: przy jej powstaniu pracowało wielu polskich autorów,
-                    grafików
-                    i redaktorów. Mój udział w tym projekcie stanowiła <span style={styleB}>redakcja opowiadania </span>
+                    grafików i redaktorów. Mój udział w tym projekcie stanowiła <span style={styleB}>redakcja opowiadania </span>
                     <span style={styleIB}>Gieroj</span>. Utwór składa się z listów rosyjskiego żołnierza, który szybko
                     dochodzi do wniosku, że walczy po niewłaściwej stronie.
                 </p>
@@ -49,10 +48,9 @@ export const BookList: IBook[] = [
             <>
                 <p>
                     Moja praca nad tą książką związana była z praktyką studencką, którą odbywałam w <span
-                    style={styleB}>Wydawnictwie Ha!art</span>. <span
-                    style={styleIB}>Nasze zwierzęta mocy</span> to książka o zwierzętach - symbolach, archetypach
-                    - obecnych w naszym życiu, literaturze, sztuce
-                    i astrologii. Dzieło jest też zbiorem spostrzeżeń i wieloletnich obserwacji autora.
+                    style={styleB}>Wydawnictwie Ha!art</span>. <span style={styleIB}>Nasze zwierzęta mocy</span> to
+                    książka o zwierzętach - symbolach, archetypach - obecnych w naszym życiu, literaturze, sztuce i
+                    astrologii. Dzieło jest też zbiorem spostrzeżeń i wieloletnich obserwacji autora.
                 </p>
                 <p>
                     Książkę można zakupić na
@@ -75,8 +73,7 @@ export const BookList: IBook[] = [
                 <p>
                     Z powodu pilności zlecenia i jego złożoności pracowało nad nim dwoje redaktorów - do moich
                     obowiązków
-                    należała <span
-                    style={styleB}>redakcja części utworów, korekta drugiej części oraz korekta poskładowa całości</span>.
+                    należała <span style={styleB}>redakcja części utworów, korekta drugiej części oraz korekta poskładowa całości</span>.
                     Praca nad książką pod presją czasu wymagała ciągłej korespondencji z tłumaczami,
                     a największym wyzwaniem było takie opracowanie utworów (pełnych zwrotów obcojęzycznych), aby były
                     jak najbardziej przystępne dla polskiego czytelnika.
@@ -203,6 +200,5 @@ export const BookList: IBook[] = [
             </>,
         imgUrl: "https://www.sklep.ha.art.pl/userdata/public/gfx/755/Haart_Jarman_Modern-nature_okladka.jpg",
     },
-
 // TODO: Add more book
 ]

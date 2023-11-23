@@ -1,5 +1,5 @@
 import Topic from "../Topic/Topic";
-import {ChapterENG, ChapterPL} from "../Navbar/Navbar";
+import {ChapterENG, ChapterPL} from "../Data/Chapters";
 import {CardContent, CardMedia, Typography} from "@mui/material";
 import OtherList from "./OtherList";
 import Card from "@mui/material/Card";

@@ -3,8 +3,9 @@ import Card from '@mui/material/Card';
 import Box from '@mui/material/Box';
 import {CardContent, CardMedia, Typography} from "@mui/material";
 import Topic from "../Topic/Topic";
-import {ChapterENG, ChapterPL} from "../Navbar/Navbar";
+import {ChapterENG, ChapterPL} from "../Data/Chapters";
 import {styleCardBO} from "../Data/Styles";
+import React from "react";
 
 export default function Books() {
 

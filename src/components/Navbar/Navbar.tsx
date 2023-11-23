@@ -3,18 +3,7 @@ import Button from '@mui/material/Button';
 import React from "react";
 import {styleBGI} from "../Data/Styles";
 import ModalContact from "./ModalContact";
-
-export enum ChapterPL {
-    BOOKS = 'Książki',
-    OTHER = 'Inne',
-    CONTACT = 'Kontakt',
-}
-
-export enum ChapterENG {
-    BOOKS = 'Books',
-    OTHER = 'Other',
-    CONTACT = 'Contact',
-}
+import {ChapterENG, ChapterPL} from "../Data/Chapters";
 
 export default function Navbar() {
     function linkToChapter(href: any, name: string) {

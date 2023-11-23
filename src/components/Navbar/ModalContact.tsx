@@ -7,7 +7,7 @@ import PersonalData from "../Data/PersonalData";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Links from "../Data/Links";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
-import {ChapterPL} from "./Navbar";
+import {ChapterPL} from "../Data/Chapters";
 
 export default function ModalContact() {
     const [open, setOpen] = useState(false);

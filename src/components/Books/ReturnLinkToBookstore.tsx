@@ -1,7 +1,6 @@
 import {styleB} from "../Data/Styles";
-import React from "react";
 
-export default function returnLinkToBookstore(url: string, publisher: string): JSX.Element {
+export default function returnLinkToBookstore(url: string, publisher: string) {
     return (
         <>
             <a

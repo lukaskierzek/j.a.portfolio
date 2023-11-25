@@ -10,11 +10,14 @@ export default function topic(topic: string, id: string) {
                     marginBottom: '25px',
                     padding: '10px',
                     justifyContent: 'center',
-                    backgroundColor: "#434242",
+                    backgroundImage: "linear-gradient(to right, #56BEB7, #E0EEEF)",
+                    border: "none",
+                    boxShadow: "none",
+                    color: "white"
                 }}
                 id={id}
             >
-                <Typography variant="h3" sx={{color: 'white'}}>
+                <Typography variant="h3">
                     {topic.toUpperCase()}
                 </Typography>
             </Card>

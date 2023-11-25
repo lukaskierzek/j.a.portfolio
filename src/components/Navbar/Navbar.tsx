@@ -1,7 +1,7 @@
 import {Grid, Stack, Typography} from "@mui/material";
 import Button from '@mui/material/Button';
 import React from "react";
-import {styleBGI} from "../Data/Styles";
+import {styleBGI, styleNavbarButton} from "../Data/Styles";
 import ModalContact from "./ModalContact";
 import {ChapterENG, ChapterPL} from "../Data/Chapters";
 
@@ -12,7 +12,7 @@ export default function Navbar() {
                 <Button>
                     <Typography
                         href={`#${href}`}
-                        style={{padding: '10px'}}
+                        sx={styleNavbarButton}
                         component="a"
                     >
                         {name}

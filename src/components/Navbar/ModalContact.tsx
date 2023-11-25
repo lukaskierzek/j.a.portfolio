@@ -8,6 +8,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Links from "../Data/Links";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import {ChapterPL} from "../Data/Chapters";
+import {styleNavbarButton} from "../Data/Styles";
 
 export default function ModalContact() {
     const [open, setOpen] = useState(false);
@@ -47,7 +48,11 @@ export default function ModalContact() {
 
     return (
         <>
-            <Button onClick={handleOpen} sx={{color: "black"}}>{ChapterPL.CONTACT}</Button>
+            <Button onClick={handleOpen}>
+                <Typography sx={styleNavbarButton}>
+                    {ChapterPL.CONTACT}
+                </Typography>
+            </Button>
             <Modal
                 open={open}
                 onClose={handleClose}

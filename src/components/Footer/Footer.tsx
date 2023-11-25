@@ -21,19 +21,18 @@ export default function Footer() {
 
     return (
         <>
-            <Grid container>
-                <Grid lg={12}>
-                    <footer>
-                        <Typography
-                            align="center"
-                            variant="body2"
-                        >
-                            Autorzy: {FooterAHTMLTag(PersonalData.LK_FULL_NAME, Links.LINKEDIN_LUKAS_KIERZEK)}, {FooterAHTMLTag(PersonalData.JA_FULL_NAME, Links.LINKEDIN_JUSTYNA_ADAMUS)}.
-                            Wszelkie prawa
-                            zastrzeżone. {FooterAHTMLTag("Kod źródłowy / Source code", Links.GITHUB_SOURCE_CODE)}
-                        </Typography>
-                    </footer>
-                </Grid>
+            <Grid
+                container
+                alignItems="center"
+                justifyContent="center"
+            >
+                <footer>
+                    <Typography variant="body2">
+                        Autorzy: {FooterAHTMLTag(PersonalData.LK_FULL_NAME, Links.LINKEDIN_LUKAS_KIERZEK)}, {FooterAHTMLTag(PersonalData.JA_FULL_NAME, Links.LINKEDIN_JUSTYNA_ADAMUS)}.
+                        Wszelkie prawa
+                        zastrzeżone. {FooterAHTMLTag("Kod źródłowy / Source code", Links.GITHUB_SOURCE_CODE)}
+                    </Typography>
+                </footer>
             </Grid>
         </>
     );

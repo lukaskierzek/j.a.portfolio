@@ -20,7 +20,6 @@ export default function ModalContact() {
 		top: '50%',
 		left: '50%',
 		transform: 'translate(-50%, -50%)',
-		width: '400px',
 		backgroundColor: '#F3EFE0',
 		border: '2px solid #000',
 		boxShadow: 24,
@@ -30,7 +29,7 @@ export default function ModalContact() {
 	function ReturnGridModal(stackIcon: React.ReactElement, stackContent: React.ReactElement) {
 		return (
 			<>
-				<Grid lg={12} sx={{mb: 1}}>
+				<Grid lg={12} sx={{margin: "0 10px 10px 0"}}>
 					<Stack spacing={2} direction="row" alignItems="center">
 						<Stack>
 							<Avatar sx={{bgcolor: "black"}}>

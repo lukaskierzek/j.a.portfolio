@@ -7,17 +7,17 @@ import Footer from "./components/Footer/Footer";
 import Container from '@mui/material/Container';
 
 function App() {
-	return (
-		<>
-			<Container maxWidth='lg'>
-				<Header/>
-				<Navbar/>
-				<Books/>
-				<Other/>
-				<Footer/>
-			</Container>
-		</>
-	);
+  return (
+    <>
+      <Container maxWidth='lg'>
+        <Header/>
+        <Navbar/>
+        <Books/>
+        <Other/>
+        <Footer/>
+      </Container>
+    </>
+  );
 }
 
 export default App;

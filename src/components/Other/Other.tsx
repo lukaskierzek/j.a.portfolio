@@ -27,6 +27,7 @@ export default function Other() {
               <Typography
                 variant="body1"
                 color="text.primary"
+                component="article"
               >
                 {other.about}
               </Typography>

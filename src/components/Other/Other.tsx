@@ -28,6 +28,7 @@ export default function Other() {
                 variant="body1"
                 color="text.primary"
                 component="article"
+                sx={{paddingTop: "15px"}}
               >
                 {other.about}
               </Typography>

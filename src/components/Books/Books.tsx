@@ -45,6 +45,8 @@ export default function Books() {
               <Typography
                 variant="body1"
                 color="text.primary"
+                component="article"
+                sx={{paddingTop: "15px"}}
               >
                 {book.about}
               </Typography>
@@ -70,3 +72,5 @@ export default function Books() {
     </>
   );
 }
+
+// TODO: Add html tags, e.g. article, section, main.

@@ -12,9 +12,13 @@ function App() {
       <Container maxWidth='lg'>
         <Header/>
         <Navbar/>
-        <Books/>
-        <Other/>
-        <Footer/>
+        <main>
+          <Books/>
+          <Other/>
+        </main>
+        <footer>
+          <Footer/>
+        </footer>
       </Container>
     </>
   );

@@ -7,5 +7,4 @@ export enum ChapterPL {
 export enum ChapterENG {
   BOOKS = 'Books',
   OTHER = 'Other',
-  CONTACT = 'Contact',
 }

@@ -24,19 +24,21 @@ export default function Navbar() {
 
   return (
     <>
-      <Grid container>
-        <Grid item xs={12} sx={{
-          margin: "20px 0 20px 0",
-          backgroundColor: "#22A39F",
-          ...styleBGI,
-        }}>
-          <Stack direction="row">
-            {linkToChapter(ChapterENG.BOOKS, ChapterPL.BOOKS)}
-            {linkToChapter(ChapterENG.OTHER, ChapterPL.OTHER)}
-            {ModalContact()}
-          </Stack>
+      <nav>
+        <Grid container>
+          <Grid item xs={12} sx={{
+            margin: "20px 0 20px 0",
+            backgroundColor: "#22A39F",
+            ...styleBGI,
+          }}>
+            <Stack direction="row">
+              {linkToChapter(ChapterENG.BOOKS, ChapterPL.BOOKS)}
+              {linkToChapter(ChapterENG.OTHER, ChapterPL.OTHER)}
+              {ModalContact()}
+            </Stack>
+          </Grid>
         </Grid>
-      </Grid>
+      </nav>
     </>
   );
 }

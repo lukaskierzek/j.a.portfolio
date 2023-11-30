@@ -16,9 +16,7 @@ function App() {
           <Books/>
           <Other/>
         </main>
-        <footer>
-          <Footer/>
-        </footer>
+        <Footer/>
       </Container>
     </>
   );

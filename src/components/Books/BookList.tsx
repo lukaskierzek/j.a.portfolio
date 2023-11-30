@@ -1,7 +1,7 @@
 import Publisher from "../Data/PublisherList";
-import {styleB, styleIB} from "../Data/Styles";
 import returnLinkToBookstore from "./ReturnLinkToBookstore";
 import React from "react";
+import {Typography} from "@mui/material";
 
 interface IBook {
   id: number,
@@ -12,7 +12,6 @@ interface IBook {
   imgUrl: string,
 }
 
-
 export const BookList: IBook[] = [
   {
     id: 1,
@@ -21,21 +20,37 @@ export const BookList: IBook[] = [
     workType: "Redakcja",
     about:
       <>
-        <p>
-          <span style={styleIB}>24/02/22. Antologia dla Ukrainy</span> miała na celu okazanie solidarności z
-          zaatakowaną Ukrainą oraz realne wsparcie organizacji Proliska, do której trafił dochód ze sprzedaży
-          książek w formie e-booków.
-        </p>
-        <p>
+        <Typography
+          component="section"
+          variant="body1"
+          marginBottom={2}
+        >
+          <Typography component="span" fontStyle="italic" fontWeight="bold">24/02/22. Antologia dla
+            Ukrainy</Typography> miała na celu
+          okazanie solidarności z zaatakowaną Ukrainą oraz realne wsparcie organizacji Proliska, do której
+          trafił dochód
+          ze sprzedaży książek w formie e-booków.
+        </Typography>
+        <Typography
+          component="section"
+          variant="body1"
+          marginBottom={2}
+        >
           Antologia była przedsięwzięciem charytatywnym: przy jej powstaniu pracowało wielu polskich autorów,
-          grafików i redaktorów. Mój udział w tym projekcie stanowiła <span style={styleB}>redakcja opowiadania </span>
-          <span style={styleIB}>Gieroj</span>. Utwór składa się z listów rosyjskiego żołnierza, który szybko
-          dochodzi do wniosku, że walczy po niewłaściwej stronie.
-        </p>
-        <p>
+          grafików i redaktorów. Mój udział w tym projekcie stanowiła <Typography component="span"
+                                                                                  fontWeight="bold">redakcja
+          opowiadania </Typography>
+          <Typography component="span" fontStyle="italic" fontWeight="bold">Gieroj</Typography>. Utwór składa
+          się z listów rosyjskiego
+          żołnierza, który szybko dochodzi do wniosku, że walczy po niewłaściwej stronie.
+        </Typography>
+        <Typography
+          component="section"
+          variant="body1"
+        >
           Obecnie całą antologię można pobrać za darmo ze
           strony {returnLinkToBookstore("https://wydawnictwoix.pl/produkt/24-02-2022/", Publisher.IX)}.
-        </p>
+        </Typography>
       </>,
     imgUrl: "https://wydawnictwoix.pl/wp-content/uploads/2022/04/24022022_cover_kolor_800px.jpg",
   },
@@ -46,16 +61,33 @@ export const BookList: IBook[] = [
     workType: "Korekta poskładowa",
     about:
       <>
-        <p>
-          Moja praca nad tą książką związana była z praktyką studencką, którą odbywałam w <span
-          style={styleB}>Wydawnictwie Ha!art</span>. <span style={styleIB}>Nasze zwierzęta mocy</span> to
-          książka o zwierzętach - symbolach, archetypach - obecnych w naszym życiu, literaturze, sztuce i
+        <Typography
+          component="section"
+          variant="body1"
+          marginBottom={2}
+        >
+          Moja praca nad tą książką związana była z praktyką studencką, którą odbywałam w <Typography
+          component="span"
+          fontWeight="bold"
+        >
+          Wydawnictwie Ha!art.
+        </Typography> <Typography
+          component="span"
+          fontStyle="italic"
+          fontWeight="bold"
+        >
+          Nasze zwierzęta mocy
+        </Typography> to książka o zwierzętach - symbolach, archetypach - obecnych w naszym życiu, literaturze,
+          sztuce i
           astrologii. Dzieło jest też zbiorem spostrzeżeń i wieloletnich obserwacji autora.
-        </p>
-        <p>
+        </Typography>
+        <Typography
+          component="section"
+          variant="body1"
+        >
           Książkę można zakupić na
           stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/Wojciech-Jozwiak-Nasze-zwierzeta-mocy/594", Publisher.HAART)}.
-        </p>
+        </Typography>
       </>,
     imgUrl: "https://www.sklep.ha.art.pl/userdata/public/gfx/740/Haart_Nasze-zwierzeta-mocy_okladka_15.01.23.jpg",
   },
@@ -66,24 +98,36 @@ export const BookList: IBook[] = [
     workType: "Redakcja, korekta, korekta poskładowa",
     about:
       <>
-        <p>
-          Ambitny projekt ukraińskiego pisarza - zbiór <span
-          style={styleB}>opowiadań oraz utworów dramatycznych</span> tłumaczonych
+        <Typography
+          component="section"
+          variant="body1"
+          marginBottom={2}
+        >
+          Ambitny projekt ukraińskiego pisarza - zbiór <Typography component="span" fontWeight="bold">opowiadań
+          oraz utworów dramatycznych</Typography> tłumaczonych
           przez trzech tłumaczy ze względu na specyficzny język utworów.
-        </p>
-        <p>
+        </Typography>
+        <Typography
+          component="section"
+          variant="body1"
+          marginBottom={2}
+        >
           Z powodu pilności zlecenia i jego złożoności pracowało nad nim dwoje redaktorów - do moich
           obowiązków
-          należała <span
-          style={styleB}>redakcja części utworów, korekta drugiej części oraz korekta poskładowa całości</span>.
+          należała <Typography
+          component="span" fontWeight="bold">redakcja części utworów, korekta drugiej części oraz korekta
+          poskładowa całości</Typography>.
           Praca nad książką pod presją czasu wymagała ciągłej korespondencji z tłumaczami,
           a największym wyzwaniem było takie opracowanie utworów (pełnych zwrotów obcojęzycznych), aby były
           jak najbardziej przystępne dla polskiego czytelnika.
-        </p>
-        <p>
+        </Typography>
+        <Typography
+          component="section"
+          variant="body1"
+        >
           Książkę można zakupić na
           stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/Les-Belej-Plan-naprawy-Ukrainy/592", Publisher.HAART)}.
-        </p>
+        </Typography>
       </>,
     imgUrl: "https://www.sklep.ha.art.pl/userdata/public/gfx/738/Plan-naprawy-Ukrainy-poprawiona-final.jpg",
   },
@@ -94,20 +138,33 @@ export const BookList: IBook[] = [
     workType: "Redakcja",
     about:
       <>
-        <p>
-          <span style={styleB}>Zbiór ośmiu opowiadań</span> autorki, która otrzymała nagrodę literacką Anasoft
+        <Typography
+          component="section"
+          variant="body1"
+          marginBottom={2}
+        >
+          <Typography component="span" fontWeight="bold">Zbiór ośmiu opowiadań</Typography> autorki, która
+          otrzymała nagrodę literacką Anasoft
           Litera 2021 za najlepszą książkę prozatorską na Słowacji.
-        </p>
-        <p>
-          <span style={styleB}>Redakcja</span> tej książki przyniosła mi wiele satysfakcji, szczególnie ze
+        </Typography>
+        <Typography
+          component="section"
+          variant="body1"
+          marginBottom={2}
+        >
+          <Typography component="span" fontWeight="bold">Redakcja</Typography> tej książki przyniosła mi wiele
+          satysfakcji, szczególnie ze
           względu na lekkość stylu i świetny kontakt
           z tłumaczką. Urzeka też tematyka zbioru - inność
           i poszukiwanie własnej tożsamości.
-        </p>
-        <p>
+        </Typography>
+        <Typography
+          component="section"
+          variant="body1"
+        >
           Książkę można zakupić na
           stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/Barbora-Hrinova-Jednorozce%2C-tlum.-Olga-Stawinska/596", Publisher.HAART)}.
-        </p>
+        </Typography>
       </>,
     imgUrl: "https://www.sklep.ha.art.pl/userdata/public/gfx/741/okladka-jednorozce_yellow-1.jpg",
   },
@@ -118,19 +175,33 @@ export const BookList: IBook[] = [
     workType: "Redakcja, korekta poskładowa",
     about:
       <>
-        <p>
-          Książka bulwersująca i kontrowersyjna - ze względu na relację, którą opisuje. <span style={styleB}>Przypomina dziennik lub pamiętnik</span>,
+        <Typography
+          component="section"
+          variant="body1"
+          marginBottom={2}
+        >
+          Książka bulwersująca i kontrowersyjna - ze względu na relację, którą opisuje. <Typography
+          component="span" fontWeight="bold">Przypomina dziennik lub pamiętnik</Typography>,
           ale nie da się jej tak łatwo skategoryzować.
-        </p>
-        <p>
+        </Typography>
+        <Typography
+          component="section"
+          variant="body1"
+          marginBottom={2}
+        >
           Praca nad książką wymagała szczególnej ostrożności
-          w kwestii podejmowania <span style={styleB}>redakcyjnych</span> decyzji, aby nie naruszyć
+          w kwestii podejmowania <Typography component="span"
+                                             fontWeight="bold">redakcyjnych</Typography> decyzji, aby nie
+          naruszyć
           specyficznego stylu autorki, oraz zachowania mniej rygorystycznych rozwiązań interpunkcyjnych.
-        </p>
-        <p>
+        </Typography>
+        <Typography
+          component="section"
+          variant="body1"
+        >
           Książkę można zakupić na
           stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/Nicol-Hochholczerova-Tego-pokoju-nie-da-sie-zjesc%2C-tlum.-Rafal-Bukowicz/593", Publisher.HAART)}.
-        </p>
+        </Typography>
       </>,
     imgUrl: "https://www.sklep.ha.art.pl/userdata/public/gfx/739/Haart_Nicol-H._Tego-pokoju_okladka_15.01.23.jpg",
   },
@@ -141,18 +212,30 @@ export const BookList: IBook[] = [
     workType: "Korekta, korekta poskładowa",
     about:
       <>
-        <p>
-          Zbiór przemyśleń i relacji <span style={styleB}>w formie esejów</span>, specyficzny humor, pisanie o
+        <Typography
+          component="section"
+          variant="body1"
+          marginBottom={2}
+        >
+          Zbiór przemyśleń i relacji <Typography component="span" fontWeight="bold">w formie
+          esejów</Typography>, specyficzny humor, pisanie o
           raku tak, aby przebrnąć przez doświadczenie choroby, nie popadając w "toposy onkopisania".
-        </p>
-        <p>
+        </Typography>
+        <Typography
+          component="section"
+          variant="body1"
+          marginBottom={2}
+        >
           Korekta i korekta poskładowa tej książki wymagała czujności i zadbania o konsekwencję zapisu
           poszczególnych nazw.
-        </p>
-        <p>
+        </Typography>
+        <Typography
+          component="section"
+          variant="body1"
+        >
           Książkę można zakupić na
           stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/Adrianna-Alksnin-Na-cos-trzeba-umrzec/600", Publisher.HAART)}.
-        </p>
+        </Typography>
       </>,
     imgUrl: "https://www.sklep.ha.art.pl/userdata/public/gfx/745/Haart_Na-cos-trzeba-umrzec_okladka_22.02.233-1.jpg",
   },
@@ -163,20 +246,30 @@ export const BookList: IBook[] = [
     workType: "Korekta, korekta poskładowa",
     about:
       <>
-        <p>
-          <span style={styleB}>Zbiór reportaży</span>, ich bohaterowie przemierzają Afrykę
-          i Bliski Wschód. Czytelnik zdaje się błądzić na granicy faktu oraz fikcji. Książka poruszająca,
-          odkrywająca to, co ludzkie
-          i nie zawsze dobre.
-        </p>
-        <p>
+        <Typography
+          component="section"
+          variant="body1"
+          marginBottom={2}
+        >
+          <Typography component="span" fontWeight="bold">Zbiór reportaży</Typography>, ich bohaterowie
+          przemierzają Afrykę i Bliski Wschód. Czytelnik zdaje się błądzić na granicy faktu oraz fikcji.
+          Książka poruszająca, odkrywająca to, co ludzkie i nie zawsze dobre.
+        </Typography>
+        <Typography
+          component="section"
+          variant="body1"
+          marginBottom={2}
+        >
           Podczas korekty i korekty poskładowej szczególnej uwagi wymagały nazwy własne i terminy dotyczące
           społeczności arabskiej.
-        </p>
-        <p>
+        </Typography>
+        <Typography
+          component="section"
+          variant="body1"
+        >
           Książkę można zakupić na
           stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/Adrianna-Alksnin-Na-cos-trzeba-umrzec/600", Publisher.HAART)}.
-        </p>
+        </Typography>
       </>,
     imgUrl: "https://www.sklep.ha.art.pl/userdata/public/gfx/752/Haart_Diabel-to-czarny-pies-_okladka_27.04.22_-1.jpg",
   },
@@ -187,20 +280,32 @@ export const BookList: IBook[] = [
     workType: "Redakcja",
     about:
       <>
-        <p>
-          <span style={styleB}>Dziennik wybitnego twórcy awangardowego</span>, w którym przeplatają się
+        <Typography
+          component="section"
+          variant="body1"
+          marginBottom={2}
+        >
+          <Typography component="span" fontWeight="bold">Dziennik wybitnego twórcy awangardowego</Typography>,
+          w którym przeplatają się
           wspomnienia, wizje twórcze, codzienne czynności i przemyślenia brytyjskiego reżysera.
-        </p>
-        <p>
+        </Typography>
+        <Typography
+          component="section"
+          variant="body1"
+          marginBottom={2}
+        >
           Redakcja tej książki wymagała pogłębienia znajomości słownictwa filmowego, botanicznego i czujności
           podczas sprawdzania nazwisk oraz pseudonimów osób pojawiających się na kartach dziennika.
-        </p>
-        <p>
+        </Typography>
+        <Typography
+          component="section"
+          variant="body1"
+        >
           Książkę można zakupić na
           stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/PRZEDSPRZEDAZ-Derek-Jarman-Wspolczesna-natura%2C-tlum.-Pawel-Swierczek/607", Publisher.HAART)}.
-        </p>
+        </Typography>
       </>,
     imgUrl: "https://www.sklep.ha.art.pl/userdata/public/gfx/755/Haart_Jarman_Modern-nature_okladka.jpg",
   },
-// TODO: Add more book
+// TODO: Add more books:)
 ]

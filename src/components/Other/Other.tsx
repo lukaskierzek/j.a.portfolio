@@ -12,7 +12,7 @@ export default function Other() {
     <>
       <Card sx={styleCardBO} key={other.title}>
         <Grid container>
-          <Grid lg={8}>
+          <Grid item lg={8}>
             <CardContent>
               <Typography
                 variant="h5"
@@ -34,7 +34,7 @@ export default function Other() {
               </Typography>
             </CardContent>
           </Grid>
-          <Grid lg={4}>
+          <Grid item lg={4}>
             <CardMedia
               component="img"
               image={other.img}

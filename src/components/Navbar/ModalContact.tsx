@@ -29,7 +29,7 @@ export default function ModalContact() {
   function ReturnGridModal(stackIcon: React.ReactElement, stackContent: React.ReactElement) {
     return (
       <>
-        <Grid lg={12} sx={{margin: "0 10px 10px 0"}}>
+        <Grid item lg={12} sx={{margin: "0 10px 10px 0"}}>
           <Stack spacing={2} direction="row" alignItems="center">
             <Stack>
               <Avatar sx={{bgcolor: "black"}}>

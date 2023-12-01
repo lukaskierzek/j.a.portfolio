@@ -13,7 +13,7 @@ export default function Books() {
     <>
       <Card sx={styleCardBO} key={`${book.title}${book.id}`}>
         <Grid container>
-          <Grid lg={8}>
+          <Grid item lg={8}>
             <CardContent>
               <Typography
                 variant="h5"
@@ -52,7 +52,7 @@ export default function Books() {
               </Typography>
             </CardContent>
           </Grid>
-          <Grid lg={4}>
+          <Grid item lg={4}>
             <CardMedia
               component="img"
               image={book.imgUrl}

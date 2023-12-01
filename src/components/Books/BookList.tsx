@@ -27,8 +27,7 @@ export const BookList: IBook[] = [
         >
           <Typography component="span" fontStyle="italic" fontWeight="bold">24/02/22. Antologia dla
             Ukrainy</Typography> miała na celu
-          okazanie solidarności z zaatakowaną Ukrainą oraz realne wsparcie organizacji Proliska, do której
-          trafił dochód
+          okazanie solidarności z zaatakowaną Ukrainą oraz realne wsparcie organizacji Proliska, do której trafił dochód
           ze sprzedaży książek w formie e-booków.
         </Typography>
         <Typography
@@ -78,8 +77,7 @@ export const BookList: IBook[] = [
         >
           Nasze zwierzęta mocy
         </Typography> to książka o zwierzętach - symbolach, archetypach - obecnych w naszym życiu, literaturze,
-          sztuce i
-          astrologii. Dzieło jest też zbiorem spostrzeżeń i wieloletnich obserwacji autora.
+          sztuce i astrologii. Dzieło jest też zbiorem spostrzeżeń i wieloletnich obserwacji autora.
         </Typography>
         <Typography
           component="section"
@@ -112,8 +110,7 @@ export const BookList: IBook[] = [
           variant="body1"
           marginBottom={2}
         >
-          Z powodu pilności zlecenia i jego złożoności pracowało nad nim dwoje redaktorów - do moich
-          obowiązków
+          Z powodu pilności zlecenia i jego złożoności pracowało nad nim dwoje redaktorów - do moich obowiązków
           należała <Typography
           component="span" fontWeight="bold">redakcja części utworów, korekta drugiej części oraz korekta
           poskładowa całości</Typography>.
@@ -144,8 +141,7 @@ export const BookList: IBook[] = [
           marginBottom={2}
         >
           <Typography component="span" fontWeight="bold">Zbiór ośmiu opowiadań</Typography> autorki, która
-          otrzymała nagrodę literacką Anasoft
-          Litera 2021 za najlepszą książkę prozatorską na Słowacji.
+          otrzymała nagrodę literacką Anasoft Litera 2021 za najlepszą książkę prozatorską na Słowacji.
         </Typography>
         <Typography
           component="section"
@@ -153,10 +149,8 @@ export const BookList: IBook[] = [
           marginBottom={2}
         >
           <Typography component="span" fontWeight="bold">Redakcja</Typography> tej książki przyniosła mi wiele
-          satysfakcji, szczególnie ze
-          względu na lekkość stylu i świetny kontakt
-          z tłumaczką. Urzeka też tematyka zbioru - inność
-          i poszukiwanie własnej tożsamości.
+          satysfakcji, szczególnie ze względu na lekkość stylu i świetny kontakt z tłumaczką. Urzeka też tematyka zbioru
+          - inność i poszukiwanie własnej tożsamości.
         </Typography>
         <Typography
           component="section"
@@ -192,8 +186,7 @@ export const BookList: IBook[] = [
           Praca nad książką wymagała szczególnej ostrożności
           w kwestii podejmowania <Typography component="span"
                                              fontWeight="bold">redakcyjnych</Typography> decyzji, aby nie
-          naruszyć
-          specyficznego stylu autorki, oraz zachowania mniej rygorystycznych rozwiązań interpunkcyjnych.
+          naruszyć specyficznego stylu autorki, oraz zachowania mniej rygorystycznych rozwiązań interpunkcyjnych.
         </Typography>
         <Typography
           component="section"
@@ -226,8 +219,8 @@ export const BookList: IBook[] = [
           variant="body1"
           marginBottom={2}
         >
-          Korekta i korekta poskładowa tej książki wymagała czujności i zadbania o konsekwencję zapisu
-          poszczególnych nazw.
+          Korekta i korekta poskładowa tej książki wymagała czujności i zadbania o konsekwencję zapisu poszczególnych
+          nazw.
         </Typography>
         <Typography
           component="section"

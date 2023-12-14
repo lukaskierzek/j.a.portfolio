@@ -1,10 +1,9 @@
 import React from 'react';
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
-import Books from "./components/Books/Books";
-import Other from "./components/Other/Other";
 import Footer from "./components/Footer/Footer";
 import Container from '@mui/material/Container';
+import Main from "./components/Main/Main";
 
 function App() {
   return (
@@ -12,10 +11,7 @@ function App() {
       <Container maxWidth='lg'>
         <Header/>
         <Navbar/>
-        <main>
-          <Books/>
-          <Other/>
-        </main>
+        <Main/>
         <Footer/>
       </Container>
     </>

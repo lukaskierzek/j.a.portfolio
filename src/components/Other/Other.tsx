@@ -5,6 +5,7 @@ import OtherList from "./OtherList";
 import Card from "@mui/material/Card";
 import {styleCardBO} from "../Data/Styles";
 import Grid from "@mui/material/Grid";
+import {TypographyAbout, TypographyTitle} from "./OtherStyles";
 
 export default function Other() {
 
@@ -16,10 +17,7 @@ export default function Other() {
             <CardContent>
               <Typography
                 variant="h5"
-                sx={{
-                  fontWeight: 'bold',
-                  padding: '0 0 10px 0'
-                }}
+                sx={TypographyTitle}
                 align="center"
               >
                 {other.title}
@@ -28,7 +26,7 @@ export default function Other() {
                 variant="body1"
                 color="text.primary"
                 component="article"
-                sx={{paddingTop: "15px"}}
+                sx={TypographyAbout}
               >
                 {other.about}
               </Typography>

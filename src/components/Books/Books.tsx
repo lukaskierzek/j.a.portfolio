@@ -6,6 +6,7 @@ import {ChapterENG, ChapterPL} from "../Data/Chapters";
 import {styleCardBO} from "../Data/Styles";
 import React from "react";
 import Grid from "@mui/material/Grid";
+import {TypographyAbout, TypographyAuthor, TypographyTitle, TypographyWorkType} from "./BooksStyles";
 
 export default function Books() {
 
@@ -17,28 +18,19 @@ export default function Books() {
             <CardContent>
               <Typography
                 variant="h5"
-                sx={{
-                  fontWeight: 'bold',
-                  padding: '0 0 10px 0'
-                }}
+                sx={TypographyAuthor}
               >
                 {book.author}
               </Typography>
               <Typography
                 variant="h4"
-                sx={{
-                  fontWeight: 'bold',
-                  color: 'green'
-                }}
+                sx={TypographyTitle}
               >
                 {book.title}
               </Typography>
               <Typography
                 variant="h5"
-                sx={{
-                  fontWeight: 'bold',
-                  padding: '20px 0 20px 0'
-                }}
+                sx={TypographyWorkType}
               >
                 {book.workType}
               </Typography>
@@ -46,7 +38,7 @@ export default function Books() {
                 variant="body1"
                 color="text.primary"
                 component="article"
-                sx={{paddingTop: "15px"}}
+                sx={TypographyAbout}
               >
                 {book.about}
               </Typography>
@@ -72,5 +64,3 @@ export default function Books() {
     </>
   );
 }
-
-// TODO: Add html tags, e.g. article, section, main.

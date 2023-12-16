@@ -1,9 +1,10 @@
 import {Grid, Stack, Typography} from "@mui/material";
 import Button from '@mui/material/Button';
 import React from "react";
-import {styleBGI, styleNavbarButton} from "../Data/Styles";
+import {styleNavbarButton} from "../Data/Styles";
 import ModalContact from "./ModalContact";
 import {ChapterENG, ChapterPL} from "../Data/Chapters";
+import {GridNav} from "./NavbarStyles";
 
 export default function Navbar() {
   function linkToChapter(href: any, name: string) {
@@ -26,11 +27,7 @@ export default function Navbar() {
     <>
       <nav>
         <Grid container>
-          <Grid item xs={12} sx={{
-            margin: "20px 0 20px 0",
-            backgroundColor: "#22A39F",
-            ...styleBGI,
-          }}>
+          <Grid item xs={12} sx={GridNav}>
             <Stack direction="row">
               {linkToChapter(ChapterENG.BOOKS, ChapterPL.BOOKS)}
               {linkToChapter(ChapterENG.OTHER, ChapterPL.OTHER)}
@@ -42,4 +39,3 @@ export default function Navbar() {
     </>
   );
 }
-

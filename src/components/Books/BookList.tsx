@@ -279,8 +279,7 @@ export const BookList: IBook[] = [
           marginBottom={2}
         >
           <Typography component="span" fontWeight="bold">Dziennik wybitnego twórcy awangardowego</Typography>,
-          w którym przeplatają się
-          wspomnienia, wizje twórcze, codzienne czynności i przemyślenia brytyjskiego reżysera.
+          w którym przeplatają się wspomnienia, wizje twórcze, codzienne czynności i przemyślenia brytyjskiego reżysera.
         </Typography>
         <Typography
           component="section"
@@ -299,6 +298,41 @@ export const BookList: IBook[] = [
         </Typography>
       </>,
     imgUrl: "https://www.sklep.ha.art.pl/userdata/public/gfx/755/Haart_Jarman_Modern-nature_okladka.jpg",
+  },
+  {
+    id: 9,
+    title: "Dodatki filmowe Andrzeja Barańskiego. Rozmowa-rzeka",
+    author: "Paweł Jaskulski",
+    workType: "Korekta, korekta poskładowa",
+    about:
+      <>
+        <Typography
+          component="section"
+          variant="body1"
+          marginBottom={2}
+        >
+          <Typography component="span" fontWeight="bold">Obszerny wywiad rzeka</Typography> zawierający refleksje
+          słynnego reżysera Andrzeja Barańskiego i <Typography component="span" fontWeight="bold">rekonstrukcje jego
+          krótkometrażowych filmów</Typography>.
+        </Typography>
+        <Typography
+          component="section"
+          variant="body1"
+          marginBottom={2}
+        >
+          Podczas korekty tej publikacji zwracałam szczególną uwagę na ujednolicenie zapisów oraz  poprawność danych
+          zawartych w końcowym wykazie filmów. Korekta poskładowa wiązała się natomiast z dokładnym sprawdzeniem
+          hierarchii elementów niełatwego (ze względu na treść) składu.
+        </Typography>
+        <Typography
+          component="section"
+          variant="body1"
+        >
+          Książkę można zakupić na
+          stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/PRZEDSPRZEDAZ-Pawel-Jaskulski-Dodatki-filmowe-Andrzeja-Baranskiego/609", Publisher.HAART)}.
+        </Typography>
+      </>,
+    imgUrl: "https://www.sklep.ha.art.pl/userdata/public/gfx/759/Haart_JaskulskiPawel_Dodatkifilmowe_okladka_20231212.jpg",
   },
 // TODO: Add more books:)
 ]

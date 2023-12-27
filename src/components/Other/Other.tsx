@@ -5,7 +5,7 @@ import OtherList from "./OtherList";
 import Card from "@mui/material/Card";
 import {styleCardBO} from "../Data/Styles";
 import Grid from "@mui/material/Grid";
-import {TypographyAbout, TypographyTitle} from "./OtherStyles";
+import {GridImg, TypographyAbout, TypographyTitle} from "./OtherStyles";
 
 export default function Other() {
 
@@ -32,7 +32,7 @@ export default function Other() {
               </Typography>
             </CardContent>
           </Grid>
-          <Grid item lg={4}>
+          <Grid item lg={4} sx={GridImg}>
             <CardMedia
               component="img"
               image={other.img}

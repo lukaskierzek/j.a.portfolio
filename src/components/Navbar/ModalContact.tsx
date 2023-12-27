@@ -9,30 +9,20 @@ import Links from "../Data/Links";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import {ChapterPL} from "../Data/Chapters";
 import {styleNavbarButton} from "../Data/Styles";
+import {style, fReturnGridModal_Grid, fReturnGridModal_Avatar, fReturnGridModalReturn_Grid} from "./ModalContactStyles";
 
 export default function ModalContact() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  const style = {
-    position: 'absolute' as 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    backgroundColor: '#F3EFE0',
-    border: '2px solid #000',
-    boxShadow: 24,
-    p: 5,
-  };
-
   function ReturnGridModal(stackIcon: React.ReactElement, stackContent: React.ReactElement) {
     return (
       <>
-        <Grid item lg={12} sx={{margin: "0 10px 10px 0"}}>
+        <Grid item lg={12} sx={fReturnGridModal_Grid}>
           <Stack spacing={2} direction="row" alignItems="center">
             <Stack>
-              <Avatar sx={{bgcolor: "black"}}>
+              <Avatar sx={fReturnGridModal_Avatar}>
                 {stackIcon}
               </Avatar>
             </Stack>
@@ -58,7 +48,7 @@ export default function ModalContact() {
         aria-labelledby="modal-modal-title"
       >
         <Box sx={style}>
-          <Grid container sx={{color: 'text.primary'}}>
+          <Grid container sx={fReturnGridModalReturn_Grid}>
             {ReturnGridModal(
               <EmailIcon/>,
               <>

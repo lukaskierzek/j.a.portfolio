@@ -16,3 +16,7 @@ export const TypographyWorkType = {
 export const TypographyAbout = {
   paddingTop: "15px"
 }
+
+export const GridImg = {
+  margin: '0 auto'
+}

@@ -6,7 +6,7 @@ import {ChapterENG, ChapterPL} from "../Data/Chapters";
 import {styleCardBO} from "../Data/Styles";
 import React from "react";
 import Grid from "@mui/material/Grid";
-import {TypographyAbout, TypographyAuthor, TypographyTitle, TypographyWorkType} from "./BooksStyles";
+import {GridImg, TypographyAbout, TypographyAuthor, TypographyTitle, TypographyWorkType} from "./BooksStyles";
 
 export default function Books() {
 
@@ -44,7 +44,7 @@ export default function Books() {
               </Typography>
             </CardContent>
           </Grid>
-          <Grid item lg={4}>
+          <Grid item lg={4} sx={GridImg}>
             <CardMedia
               component="img"
               image={book.imgUrl}

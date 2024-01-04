@@ -125,13 +125,14 @@ const OtherList: IOhterList[] = [
           variant="body1"
           marginBottom={2}
         >
-          Z tego powodu pomagam w ustaleniu poprawnej formy lub wykonuję szybką korektę na przesłanych zrzutach ekranu.
+          Poprawiałam też opowiadania swoich znajomych - pisane najczęściej do szuflady, ale może, kto wie...
         </Typography>
         <Typography
           component="section"
           variant="body1"
         >
-          Zmiany te mają formę sugestii - tylko od autora zależy, czy je wprowadzi.
+          Niekiedy wizja artystyczna autorów wydaje się niekonwencjonalna - nie boję się wyzwań i zawsze chętnie
+          podejmuję dialog z twórcą i jego dziełem.
         </Typography>
       </>,
     img: storytelling

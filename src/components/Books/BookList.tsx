@@ -372,5 +372,42 @@ export const BookList: IBook[] = [
       </>,
     imgUrl: "https://img.genial.ly/64cabab64f44770013cc346b/7a19d306-d744-49f2-95ba-c26e7beeca05.png",
   },
+  {
+    id: 11,
+    title: "Alfons",
+    author: "Iceberg Slim",
+    workType: "Redakcja",
+    about:
+      <>
+        <Typography
+          component="section"
+          variant="body1"
+          marginBottom={2}
+        >
+          <Typography component="span" fontWeight="bold">Autobiograficzna powieść</Typography> amerykańskiego autora,
+          który przedstawia w swojej książce, w jaki sposób został alfonsem, co go do tego skłoniło i jakie uczucia nim
+          wówczas władały. Relacja jest <Typography component="span" fontWeight="bold">nieupiększona</Typography> i
+          przerażająco <Typography component="span" fontWeight="bold">autentyczna</Typography>.
+        </Typography>
+        <Typography
+          component="section"
+          variant="body1"
+          marginBottom={2}
+        >
+          Redakcja tej książki wymagała czujności ze względu na utrzymanie konsekwencji zapisu i obecność bardzo
+          różnorodnego słownictwa. Przy wprowadzaniu poprawek istotne było też <Typography component="span"
+                                                                                           fontWeight="bold">zachowanie
+          specyficznego stylu</Typography> wypowiedzi Iceberga Slima.
+        </Typography>
+        <Typography
+          component="section"
+          variant="body1"
+        >
+          Książkę można zakupić na
+          stronie {returnLinkToBookstore("https://www.sklep.ha.art.pl/pl/p/PRZEDSPRZEDAZ-Iceberg-Slim-Alfons%2C-tlum.-Teresa-Tyszowiecka-Blask/610", Publisher.HAART)}.
+        </Typography>
+      </>,
+    imgUrl: "https://www.sklep.ha.art.pl/userdata/public/gfx/760/Haart_I.-Slim_Alfons_okladka_03.01.24.jpg",
+  },
 // TODO: Add more books:)
 ]
